@@ -32,14 +32,14 @@ h3 {
 }
 
 .bold-text {
-    margin-top: 10px;
-    margin-bottom: 20px;
+padding: 20px;
 }
 
 .main-list {
-    border: black 2px dotted;
+
     border-radius: 10px;
     padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .first {
@@ -53,10 +53,16 @@ h3 {
     height: 20px;
 }
 
-.add img {
+.action-btn[data-action="add"] img {
     width: 24px;
     height: 24px;
 }
+
+
+/* .add img {
+    width: 24px;
+    height: 24px; با اینم جواب میداد 
+} */
 
 
 .right {
@@ -65,11 +71,18 @@ h3 {
     justify-content: center;
 }
 
-.item-list {
+.action-btn[data-action="item-list"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
+/* .item-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
 
 .item {
     display: flex;
@@ -94,8 +107,8 @@ h3 {
 }
 
 .tools img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 .deletAll {
     display: flex;
@@ -104,6 +117,10 @@ h3 {
 }
 
 .deletAll img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.c-pointer {
+    cursor: pointer;
 }
