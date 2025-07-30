@@ -1,15 +1,15 @@
 
             // case "item-list":
-            //   // خلق یک div
+               // خلق یک div
             //   break;
 
             // case "singledelete":
-            //   // حذف اون ایتم
+               // حذف اون ایتم
             //   break;
 
             // case "edit":
             //   break;
 
             // case "delete":
-            //   // حذف همه ایتم ها
+              // حذف همه ایتم ها
             //   break;
