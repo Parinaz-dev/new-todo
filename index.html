@@ -16,12 +16,12 @@
         <h3>Good morning :)</h3>
       </div>
 
-      <!-- <div class="bold-text">Task List</div> -->
+     
 
       <div class="main-list">
         <div class="first">
           <div class="write">
-            <input type="text" class="input" data-action="linetext" />
+            <input type="text" class="input" data-action="line-text" />
           </div>
           <div class="right">
             <div class="action-btn c-pointer" data-action="add">
@@ -77,11 +77,12 @@
 
     <script>
       const btn = document.querySelector(".action-btn");
-      const input = document.querySelector(".input[data-action='linetext']");
+      const input = document.querySelector(".input[data-action='line-text']");
+      
 
       document.querySelectorAll(".action-btn").forEach((btn) => {
         btn.addEventListener("click", (e) => {
-          const action = e.target.dataset.action;
+          const action = e.target.closest(".action-btn")?.dataset.action;
 
           switch (action) {
             case "add":
