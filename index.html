@@ -16,12 +16,12 @@
         <h3>Good morning :)</h3>
       </div>
 
-      <div class="bold-text">Task List</div>
+      <!-- <div class="bold-text">Task List</div> -->
 
       <div class="main-list">
         <div class="first">
           <div class="write">
-            <input type="text" />
+            <input type="text" class="input" data-action="linetext" />
           </div>
           <div class="right">
             <div class="action-btn c-pointer" data-action="add">
@@ -77,6 +77,7 @@
 
     <script>
       const btn = document.querySelector(".action-btn");
+      const input = document.querySelector(".input[data-action='line-text']");
 
       document.querySelectorAll(".action-btn").forEach((btn) => {
         btn.addEventListener("click", (e) => {
@@ -84,7 +85,34 @@
 
           switch (action) {
             case "add":
-              // اضافه کن متن کاربر رو
+              const value = input.value;
+              const div = document.createElement("div");
+              div.innerHTML = `  <div class="action-btn" data-action="item-list">
+          <div class="item">
+            <div class="orangeB">
+              <button class="btn"></button>
+            </div>
+            <div class="text-info">
+              <ul>
+                <li>${value}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tools c-pointer">
+            <img
+              src="img/svg/eraser.svg"
+              alt=""
+              class="action-btn"
+              data-action="singledelete"
+            />
+            <img
+              src="img/png/edit.png"
+              alt=""
+              class="action-btn"
+              data-action="edit"
+            />
+          </div>
+        </div>`;
               break;
 
             case "item-list":
@@ -96,7 +124,6 @@
               break;
 
             case "edit":
-              // ادیت اون ایتم
               break;
 
             case "delete":
