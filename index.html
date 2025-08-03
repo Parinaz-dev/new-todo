@@ -16,8 +16,6 @@
         <h3>Good morning :)</h3>
       </div>
 
-     
-
       <div class="main-list">
         <div class="first">
           <div class="write">
@@ -25,11 +23,11 @@
           </div>
           <div class="right">
             <div class="action-btn c-pointer" data-action="add">
-              <img src="img/svg/plus.svg" alt="" />
+              <img src="img/svg/add.svg" alt="" />
             </div>
           </div>
         </div>
-        <div class="action-btn" data-action="item-list">
+        <!-- <div class="action-btn" data-action="item-list">
           <div class="item">
             <div class="orangeB">
               <button class="btn"></button>
@@ -54,7 +52,7 @@
               data-action="edit"
             />
           </div>
-        </div>
+        </div> -->
         <div class="deletAll c-pointer">
           <svg
             class="action-btn"
@@ -73,12 +71,15 @@
           <!-- alt="" class="action-btn" data-action="delete" /> -->
         </div>
       </div>
+
+      <div class="question">
+        <i>done ?</i>
+      </div>
     </div>
 
     <script>
       const btn = document.querySelector(".action-btn");
       const input = document.querySelector(".input[data-action='line-text']");
-      
 
       document.querySelectorAll(".action-btn").forEach((btn) => {
         btn.addEventListener("click", (e) => {
@@ -92,9 +93,7 @@
               div.innerHTML = `
               <div class="action-btn" data-action="item-list">
           <div class="item">
-            <div class="orangeB">
-              <button class="btn"></button>
-            </div>
+          
             <div class="text-info">
               <ul>
                 <li>${value}</li>
@@ -117,8 +116,12 @@
           </div>
         </div>`;
               document.querySelector(".main-list").appendChild(div);
+              div.firstElementChild.style.display = "flex";
               input.value = "";
               break;
+
+            // case "deletAll":
+            //   e.target.closest("action-btn[data-action='item-list']").remove();
           }
         });
       });
