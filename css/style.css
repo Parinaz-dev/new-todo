@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     direction: ltr;
-    background-image: url(../img/png/download\ 156\ \(1\).png);
+    background-image: url(../img/png/to\ do.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ body {
 
 
 .container {
-       margin: auto;
+    margin: auto;
     width: 370px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ h3 {
 }
 
 .bold-text {
-padding: 20px;
+    padding: 20px;
 }
 
 .main-list {
@@ -71,6 +71,7 @@ padding: 20px;
     align-items: center;
     justify-content: center;
 }
+
 .action-btn[data-action="add"] img {
     width: 25px;
     height: 25px;
@@ -100,6 +101,7 @@ padding: 20px;
     display: flex;
     align-items: center;
 }
+
 .orangeB {
     display: flex;
     align-items: center;
@@ -122,6 +124,7 @@ padding: 20px;
     width: 25px;
     height: 25px;
 }
+
 .deletAll {
     display: flex;
     align-items: center;
