@@ -19,7 +19,7 @@ ul {
     display: flex;
     flex-direction: column;
     position: relative;
-   
+
 }
 
 .text-watch {
@@ -152,14 +152,14 @@ h3 {
     margin-top: 45px;
     justify-content: flex-start;
     width: 100%;
-    position:relative;
+    position: relative;
     height: 100px;
 }
- 
+
 i {
     font-size: 25px;
     position: absolute;
-    
+
     animation: slide-left-right 10s linear infinite;
     left: -100px;
     display: flex;
@@ -171,37 +171,58 @@ i {
     0% {
         transform: translteX(0) rotate(0deg);
     }
-/* 
+
+    /* 
     50% {
 
     transform: translateX(100vw) rotate(360deg);
     } */
 
     100% {
-        transform: translateX(350px) rotate(1040deg); 
+        transform: translateX(350px) rotate(1040deg);
     }
 
 }
 
 
-
-
 .modal {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 3px green double;
-    border-radius: 20px;
+    justify-content: space-evenly;
+    width: 500px;
 }
 
-.circle {
+
+.red {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.green {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    background-color: white;
+    width: 40%;
+    border-radius: 15px;
+}
+
+
+.u-green .circle {
     width: 50px;
-    height:50px;
-    background-color: #ca0b00;
+    height: 50px;
+    background-color: green;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: -1px 11px 40px 1px green;
 }
 
 .circle svg {
@@ -210,7 +231,36 @@ i {
 }
 
 .u-red .circle {
-    background-color: green;
+    width: 50px;
+    height: 50px;
+    background-color: #ca0b00;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 11px 40px 1px rgba(204, 26, 26, 0.75);
 }
 
 
+.b-red,
+.b-green {
+    font-size: 20px;
+}
+
+.back-red {
+    width: 100%;
+}
+
+.back-green {
+    width: 100%;
+}
+
+.u-red {
+    position: relative;
+    bottom: 18px;
+}
+
+.u-green {
+    position: relative;
+    bottom: 18px;
+}
