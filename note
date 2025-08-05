@@ -1,0 +1,4 @@
+// case "item-list": // خلق یک div // break; // case "singledelete": // حذف اون
+ایتم // break; // case "edit": // break; // case "delete": // حذف همه ایتم ها //
+break; //
+<!--<div class="action-btn" data-action="item-list"></div> -->
