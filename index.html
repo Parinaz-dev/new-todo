@@ -123,9 +123,7 @@
               const div = document.createElement("div");
 
               div.innerHTML = `
-                            <div class="item" data-action="item-list">
-
-
+                              <div class="item" data-action="item-list">
                                 <div class="text-info">
                                     <ul>
                                    <li>${value}</li>
@@ -169,15 +167,9 @@
         switch (action) {
           case "edit": {
             const item = e.target.closest(".item");
-            if (!item) {
-              consol.log("پیدا نشد آیتم");
-              return;
-            }
+
             const li = item.querySelector("li");
-            if (!li) {
-              console.log("نیستش");
-              return;
-            }
+
             const text = li.textContent;
             const input = document.createElement("input");
             input.value = text;

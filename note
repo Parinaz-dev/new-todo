@@ -1,4 +1,4 @@
-
+/* 
 
  @keyframes slide-left-right {
     0% {
@@ -58,4 +58,13 @@
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     } 
- } 
+ }  */
+
+ /*  if (!li) {
+               console.log("نیستش");
+               return;
+             } */
+              /* if (!item) {
+              consol.log("پیدا نشد آیتم");
+               return;
+             } */
